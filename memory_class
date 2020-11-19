@@ -1,0 +1,40 @@
+
+class c_lib_memory(object):
+    def __init__(self,name,stype,dwidth,awidth,depth,ptype,pwr,prd):
+        self.name = name
+        self.stype = stype
+        self.dwidth = dwidth;
+        self.awidth = awidth;
+        self.depth = depth;
+        self.ptype = ptype;
+        self.pwr = pwr;
+        self.prd = prd;
+
+    def get_name(self):
+        return self.name
+
+    def get_stype(self):
+        return self.stype
+
+    def get_dwidth(self):
+        return self.dwidth
+
+    def get_awidth(self):
+        return self.awidth
+
+    def get_depth(self):
+        return self.depth
+
+    def get_ptype(self):
+        return self.ptype
+
+    def get_pwr(self):
+        return self.pwr
+
+    def get_prd(self):
+        return self.prd
+
+    def get_info(self):
+        return "%s RAM:%s\twidth:%d\taddr:%d\tdepth:%d\ttype:%s\tpwr:%d\tprd:%d" % (self.stype,self.name,self.dwidth,self.awidth,self.depth,self.ptype,self.pwr,self.prd)
+
+        
